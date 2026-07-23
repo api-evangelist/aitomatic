@@ -1,7 +1,30 @@
 aid: aitomatic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aitomatic.png
 name: Aitomatic
-description: Aitomatic is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aitomatic, Inc. (Palo Alto, CA) builds DanaOS, an operating system for
+  industrial AI. DanaOS is a governed, neurosymbolic, self-improving platform
+  that runs autonomous AI agents inside a customer's own boundary — for
+  semiconductor fabs, building and process operations, energy grids, and heavy
+  industry. It combines neural flexibility with symbolic precision: a Sector
+  Ontology encodes domain expertise as executable knowledge, Small Specialist
+  Agents (SSAs) reason over it in a See-Think-Act-Reflect loop, and a governance
+  substrate (the Dana Ontologist) verifies every action against ontology and
+  policy before it commits — all deployable on-prem and air-gapped. Aitomatic is
+  a founding member of the AI Alliance and publishes the open-source Dana
+  agent-native language, the OpenSSA framework, and SemiKong, the first
+  open-source semiconductor-industry LLM. Founded by Christopher Nguyen (CEO).
 url: https://raw.githubusercontent.com/api-evangelist/aitomatic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +37,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Artificial Intelligence
+- Agents
+- Industrial AI
+- Neurosymbolic
+- Semiconductor
+- Open Source
+- Machine Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.aitomatic.com/
+- type: DomainSecurity
+  url: security/aitomatic-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/aitomatic
+- type: Documentation
+  url: https://aitomatic.github.io/openssa
+- type: Blog
+  url: https://www.aitomatic.com/articles
+- type: PrivacyPolicy
+  url: https://www.aitomatic.com/privacy
+- type: Packages
+  url: packages/aitomatic-packages.yml
+- type: SDKs
+  url: packages/aitomatic-packages.yml
+- type: LLMsTxt
+  url: llms/aitomatic-llms.txt
+- type: WellKnown
+  url: well-known/aitomatic-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: searched
+source: https://pypi.org/user/aitomatic/ and https://github.com/aitomatic
+packages:
+- language: python
+  registry: pypi
+  name: dana
+  url: https://pypi.org/project/dana/
+  repo: https://github.com/aitomatic/dana
+  install: pip install dana
+  description: Dana — Domain-Aware Neurosymbolic Agent, an agent-native programming
+    language and framework for building deterministic expert agents.
+  license: MIT
+  official: true
+- language: python
+  registry: pypi
+  name: openssa
+  url: https://pypi.org/project/openssa/
+  repo: https://github.com/aitomatic/openssa
+  homepage: https://openssa.org
+  docs: https://aitomatic.github.io/openssa
+  install: pip install openssa
+  description: OpenSSA — neurosymbolic agentic AI framework of Small Specialist Agents
+    (SSAs) on the DANA architecture for industrial problem-solving.
+  license: Apache-2.0
+  official: true

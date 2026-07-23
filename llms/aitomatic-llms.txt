@@ -1,0 +1,88 @@
+# Aitomatic — DanaOS
+
+> Aitomatic builds DanaOS, the operating system for industrial AI. DanaOS is a
+> governed, neurosymbolic, self-improving platform that runs autonomous AI agents
+> inside a customer's own boundary — for semiconductor fabs, building and process
+> operations, energy grids, and heavy industry. Headquartered in Palo Alto, CA.
+> Founded by Christopher Nguyen (CEO). https://www.aitomatic.com
+
+DanaOS is an operating system, not a model and not a chatbot layer. It runs AI
+agents that read domain knowledge under authority, propose actions, have those
+actions verified against an ontology and policy, and write only verified
+knowledge back — so the system gets deeper on every run and none of the
+knowledge leaves the customer's boundary. The core idea is that 80% of the
+world's industrial data is private and air-gapped; the platform is built to make
+that private data a compounding moat rather than a blocker.
+
+## What it is
+
+- **Domain-native.** Each domain (semiconductor, building/energy, maritime, heavy
+  industry) gets a Sector Ontology — a structured, executable representation of
+  that domain's expertise that agents reason over.
+- **Neurosymbolic.** Combines neural flexibility (generalize, handle natural
+  language) with symbolic precision (deterministic, auditable, policy-constrained).
+  A "Cognitive Ontology" encodes human judgment as knowledge that acts, not a
+  document to retrieve.
+- **Sovereign / air-gapped.** Runs entirely on-prem or in a customer-controlled
+  boundary. Identity, authorization, and governance persist when the WAN is down.
+  (See the AGR — Air-Gap Readiness — levels, AGR-1 through AGR-5.)
+- **Self-improving.** Every verified run writes curated knowledge back into the
+  substrate; the knowledge base grows each run.
+- **Governed.** Agents propose; a governance peer (the Dana Ontologist) verifies
+  against ontology + policy before any write commits. Recommend-band actions are
+  held at a seam for operator approval. Quorum-based decisions.
+
+## Architecture (three parts, cleanly separated)
+
+1. **Sector Ontology** — domain knowledge graph; the deterministic spine.
+2. **Agents** — Small Specialist Agents (SSAs) that reason over the scoped
+   subgraph using a See → Think → Act → Reflect loop.
+3. **Governance substrate** — verifies, gates, and commits every write; the
+   source of truth that persists and compounds.
+
+Retrieval uses CORRAL (not RAG): governed reads scoped to a permissioned view of
+the ontology, not unfiltered vector search.
+
+## Results (selected)
+
+- Semiconductor: 2,400 equipment defects classified per shift at 94% accuracy;
+  root-cause analysis in 20 minutes vs. 3 days.
+- Complex industrial tasks: >90% accuracy with domain-aware neurosymbolic agents.
+- In production: one of the world's largest industrial operators runs DanaOS
+  across building and process operations at thousands of sites.
+
+## Related projects
+
+- **SemiKong** — the world's first open-source semiconductor-industry LLM, built
+  on Llama within the AI Alliance. Aitomatic is a founding member of the AI
+  Alliance (with IBM and Meta).
+- **Project Tapestry** — Aitomatic CEO Christopher Nguyen is Chief Architect, an
+  AI Alliance project for open and sovereign AI.
+
+## Customers and partners
+
+Hitachi, Honeywell, MaxLinear, NXP, Panasonic, Tokyo Electron (TEL), WESCO.
+
+## Key pages
+
+- [Home / DanaOS overview](https://www.aitomatic.com/)
+- [Platform & architecture](https://www.aitomatic.com/platform)
+- [Success stories / customers](https://www.aitomatic.com/customers)
+- [About Aitomatic](https://www.aitomatic.com/about)
+- [Articles](https://www.aitomatic.com/articles)
+- [Newsroom](https://www.aitomatic.com/newsroom)
+
+## Notable articles
+
+- [Air-Gapped AI Is a Ladder, Not a Checkbox (AGR levels)](https://www.aitomatic.com/article/air-gap-readiness-ladder)
+- [How Heavy Industry Can Overcome Data Scarcity](https://www.aitomatic.com/article/heavy-industry-data-scarcity)
+- [Domain-Expert AI for Predictive Maintenance](https://www.aitomatic.com/article/domain-expert-ai-predictive-maintenance)
+- [Revolutionizing Semiconductor Manufacturing with SemiKong](https://www.aitomatic.com/article/semikong-semiconductor-manufacturing)
+- [Agentic AI and Problem Solving: Transforming Industries](https://www.aitomatic.com/article/agentic-ai-problem-solving)
+
+## Optional
+
+- Blog: https://www.aitomatic.com/articles
+- LinkedIn: https://www.linkedin.com/company/72613677
+- X (Twitter): https://x.com/aitomatic
+- GitHub: https://github.com/aitomatic
