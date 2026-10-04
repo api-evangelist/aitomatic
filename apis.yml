@@ -53,8 +53,8 @@ tags:
 - Industrial AI
 - Neurosymbolic
 - Semiconductors
-- Open-Source
-- Machine-Learning
+- Open Source
+- Machine Learning
 tags_raw:
 - Company
 - Artificial Intelligence
@@ -64,6 +64,8 @@ tags_raw:
 - Semiconductor
 - Open Source
 - Machine Learning
+- Open-Source
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
